@@ -5,7 +5,7 @@
 (in-package #:lisp-game-editor/skeleton)
 
 (defvar *skeleton-directory*
-  (asdf:system-relative-pathname :clispi #P"skeleton/project/"))
+  (asdf:system-relative-pathname :lisp-game-editor #P"skeleton/project/"))
 
 (defun make-project (path
                      &rest params
