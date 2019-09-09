@@ -1,3 +1,3 @@
-(uiop:define-package #:sdl2-game-tutorial/package
-  (:nicknames #:sdl2-game-tutorial)
-  (:use-reexport #:sdl2-game-tutorial/skeleton))
+(uiop:define-package #:lisp-game-editor/package
+  (:nicknames #:lisp-game-editor)
+  (:use-reexport #:lisp-game-editor/skeleton))
