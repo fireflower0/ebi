@@ -1,8 +1,7 @@
 (uiop:define-package #:<% @var name %>/app
   (:use #:cl
         #:<% @var name %>/utils)
-  (:export #:main
-           #:*loop-control-flag*))
+  (:export #:main))
 (in-package #:<% @var name %>/app)
 
 (defun main (&rest args)
