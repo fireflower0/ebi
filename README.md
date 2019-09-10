@@ -1,10 +1,10 @@
-# lisp-game-editor
+# gecl-sdl2
 
-Editor for easy game development with Common Lisp
+Game editor for Common Lisp using SDL2
 
 # Description
 
-Auxiliary tool for smooth game development with Common Lisp and SDL2.
+Game editor for Common Lisp using SDL2
 
 # Requirement
 

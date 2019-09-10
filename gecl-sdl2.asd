@@ -1,7 +1,7 @@
-(defsystem "lisp-game-editor"
+(defsystem "gecl-sdl2"
     :class :package-inferred-system
     :version "0.2.0"
     :author ""
     :license "Mit"
     :description ""
-    :depends-on ("lisp-game-editor/package"))
+    :depends-on ("gecl-sdl2/package"))

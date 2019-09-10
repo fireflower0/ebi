@@ -4,14 +4,14 @@
 exec ros -Q -- $0 "$@"
 |#
 
-(defpackage #:lisp-game-editor/roswell/lisp-game-editor.ros
+(defpackage #:gecl-sdl2/roswell/gecl-sdl2.ros
   (:use #:cl))
-(in-package #:lisp-game-editor/roswell/lisp-game-editor.ros)
+(in-package #:gecl-sdl2/roswell/gecl-sdl2.ros)
 
-(ql:quickload '(:lisp-game-editor) :silent t)
+(ql:quickload '(:gecl-sdl2) :silent t)
 
 (defun print-usage ()
-  (format *error-output* "~&Usage: lisp-game-editor command [option...]
+  (format *error-output* "~&Usage: gecl-sdl2 command [option...]
 Commands:
   new APP_PATH [option...]
 "))
@@ -20,7 +20,7 @@ Commands:
   (declare (ignore options))
   (let ((args nil)
         (path (uiop:ensure-directory-pathname path)))
-    (apply #'lisp-game-editor:make-project path args)
+    (apply #'gecl-sdl2:make-project path args)
 
     (format t "~&$ qlot install~%")
     (uiop:run-program (format nil "cd '~A' && qlot install" path)

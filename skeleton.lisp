@@ -1,11 +1,11 @@
-(defpackage #:lisp-game-editor/skeleton
+(defpackage #:gecl-sdl2/skeleton
   (:use #:cl)
   (:import-from #:cl-project)
   (:export #:make-project))
-(in-package #:lisp-game-editor/skeleton)
+(in-package #:gecl-sdl2/skeleton)
 
 (defvar *skeleton-directory*
-  (asdf:system-relative-pathname :lisp-game-editor #P"skeleton/project/"))
+  (asdf:system-relative-pathname :gecl-sdl2 #P"skeleton/project/"))
 
 (defun make-project (path
                      &rest params
