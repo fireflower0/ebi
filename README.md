@@ -79,7 +79,7 @@ Edit `~/.lem/init.lisp`
 # Installation
 
 ```
-$ ros install fireflower0/lisp-game-editor
+$ ros install fireflower0/gecl-sdl2
 ```
 
 # Usage
@@ -87,7 +87,7 @@ $ ros install fireflower0/lisp-game-editor
 ## Make project
 
 ```
-lisp-game-editor new <project name>
+$ gecl-sdl2 new <project name>
 ```
 
 ## Edit program
