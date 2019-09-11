@@ -109,7 +109,7 @@ Can also use Roswell Script as follows
 
 ```
 $ cd roswell
-$ ros ./<project name>.ros
+$ qlot exec ros roswell/<project name>.ros
 ```
 
 # Author
