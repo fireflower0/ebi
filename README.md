@@ -103,6 +103,15 @@ Run REPL `M-x slime-qlot-exec`
 (<project name>:start)
 ```
 
+## Roswell Script
+
+Can also use Roswell Script as follows
+
+```
+$ cd roswell
+$ ros ./<project name>.ros
+```
+
 # Author
 
 fireflower0
