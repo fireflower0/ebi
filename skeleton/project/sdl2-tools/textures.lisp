@@ -1,4 +1,4 @@
-(uiop:define-package #:my-game/sdl2-tools/textures
+(uiop:define-package #:<% @var name %>/sdl2-tools/textures
   (:use #:cl)
   (:export #:textures
            #:textures-renderer
@@ -8,7 +8,7 @@
            #:create-image-texture
            #:create-string-texture
            #:render-texture))
-(in-package #:my-game/sdl2-tools/textures)
+(in-package #:<% @var name %>/sdl2-tools/textures)
 
 (defclass textures ()
   ((renderer :initarg :renderer
