@@ -4,30 +4,30 @@
 exec ros -Q -- $0 "$@"
 |#
 
-(defpackage #:gecl-sdl2/roswell/gecl-sdl2.ros
+(defpackage #:ebi/roswell/ebi.ros
   (:use #:cl))
-(in-package #:gecl-sdl2/roswell/gecl-sdl2.ros)
+(in-package #:ebi/roswell/ebi.ros)
 
-(ql:quickload '(:gecl-sdl2) :silent t)
+(ql:quickload '(:ebi) :silent t)
 
-(defconstant +print-version+ "gecl-sdl2 version 0.0.1~%")
+(defconstant +print-version+ "ebi version 0.0.1~%")
 (defconstant +print-usage+
 "Game editor for Common Lisp using SDL2
 
-Usage: gecl-sdl2 new [project name]
+Usage: ebi new [project name]
 
 Command:
   new <project name> : Generate a project
 
 Options:
-  -v, --version   print gecl-sdl2 version
+  -v, --version   print ebi version
 ")
 
 (defun command-new (path &rest options)
   (declare (ignore options))
   (let ((args nil)
         (path (uiop:ensure-directory-pathname path)))
-    (apply #'gecl-sdl2:make-project path args)
+    (apply #'ebi:make-project path args)
 
     (format t "~&$ qlot install~%")
     (uiop:run-program (format nil "cd '~A' && qlot install" path)

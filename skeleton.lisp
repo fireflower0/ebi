@@ -1,11 +1,11 @@
-(defpackage #:gecl-sdl2/skeleton
+(defpackage #:ebi/skeleton
   (:use #:cl)
   (:import-from #:cl-project)
   (:export #:make-project))
-(in-package #:gecl-sdl2/skeleton)
+(in-package #:ebi/skeleton)
 
 (defvar *skeleton-directory*
-  (asdf:system-relative-pathname :gecl-sdl2 #P"skeleton/project/"))
+  (asdf:system-relative-pathname :ebi #P"skeleton/project/"))
 
 (defun make-project (path
                      &rest params

@@ -1,57 +1,49 @@
-# gecl-sdl2
+# Ebi
 
-Game editor for Common Lisp using SDL2
+Framework that supports Game development using SDL2 in Common Lisp.
 
-# Description
-
-Game editor for Common Lisp using SDL2
-
-# Requirement
+## Requirement
 
 * [SDL2](https://www.libsdl.org/download-2.0.php)
 * [Roswell](https://github.com/roswell/roswell)
 * [Qlot](https://github.com/fukamachi/qlot)
 
-# Preparation
+## Preparation
 
-## Install SDL2 Library
+### Install SDL2 Library
 
 ```
-$ sudo apt install libsdl2-dev
-$ sudo apt install libsdl2-gfx-dev
-$ sudo apt install libsdl2-image-dev
-$ sudo apt install libsdl2-mixer-dev
-$ sudo apt install libsdl2-ttf-dev
+$ sudo apt install libsdl2-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 ```
 
-## Install Roswell
+### Install Roswell
 
 Install with reference to [here](https://github.com/roswell/roswell#installation-dependency--usage)
 
-## Install SDL2 Wrapper for Common Lisp
+### Install SDL2 Wrapper for Common Lisp
 
 ```
 $ ros install lispgames/cl-sdl2
 $ ros install Zulu-Inuoe/cl-sdl2-gfx
 ```
 
-## Install libffi
+### Install libffi
 
 ```
 $ sudo apt install libffi-dev
 ```
 
-## Install Qlot
+### Install Qlot
 
 ```
 $ ros install qlot
 ```
 
-## Setting Text Editor
+### Setting Text Editor
 
 Assume that you use Emacs or [Lem](https://github.com/cxxxr/lem)
 
-### Emacs
+#### Emacs
 
 Edit `~/.emacs.d/init.el`
 
@@ -65,7 +57,7 @@ Edit `~/.emacs.d/init.el`
                :env (list (concat "PATH=" (mapconcat 'identity exec-path ":")))))
 ```
 
-### Lem
+#### Lem
 
 Edit `~/.lem/init.lisp`
 
@@ -76,29 +68,29 @@ Edit `~/.lem/init.lisp`
   (lem-lisp-mode:run-slime (lem-lisp-mode::get-lisp-command :prefix "qlot exec ")))
 ```
 
-# Installation
+## Installation
 
 ```
-$ ros install fireflower0/gecl-sdl2
+$ ros install fireflower0/ebi
 ```
 
-# Usage
+## Usage
 
-## Make project
+### Make project
 
 ```
-$ gecl-sdl2 new <project name>
+$ ebi new <project name>
 ```
 
-## Edit program
+### Edit program
 
 Edit `app.lisp`
 
-## Run program
+### Run program
 
 The program can be run in two ways.
 
-### Slime REPL
+#### Slime REPL
 
 Run REPL `M-x slime-qlot-exec`
 
@@ -107,7 +99,7 @@ Run REPL `M-x slime-qlot-exec`
 (<project name>:start)
 ```
 
-### Roswell Script
+#### Roswell Script
 
 Can also use Roswell Script as follows
 
@@ -115,10 +107,10 @@ Can also use Roswell Script as follows
 $ qlot exec ros roswell/<project name>.ros
 ```
 
-# Author
+## Author
 
 fireflower0
 
-# License
+## License
 
 MIT
