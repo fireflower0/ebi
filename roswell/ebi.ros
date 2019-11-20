@@ -12,7 +12,7 @@ exec ros -Q -- $0 "$@"
 
 (defconstant +print-version+ "ebi version 0.0.1~%")
 (defconstant +print-usage+
-"Game editor for Common Lisp using SDL2
+"Framework that supports Game development using SDL2 in Common Lisp.
 
 Usage: ebi new [project name]
 
