@@ -1,0 +1,3 @@
+# project system-file system-name [dependency1..dependencyN]
+sdl2kit sdl2kit-examples sdl2kit-examples alexandria defpackage-plus glkit mathkit sdl2kit
+sdl2kit sdl2kit sdl2kit alexandria cl-opengl defpackage-plus sdl2

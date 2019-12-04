@@ -1,0 +1,2 @@
+# project url size file-md5 content-sha1 prefix [system-file1..system-fileN]
+sdl2 qlot://localhost/archives/sdl2-ref-fae3630d945fabdee7521fee9b99d07b4dad1155.tar.gz 1649570 af35ca60af5e8708f32d3561d77bd60b cac373c6adc91aae832ebb9aafa5e87164794b85 sdl2-ref-fae3630d945fabdee7521fee9b99d07b4dad1155 sdl2.asd

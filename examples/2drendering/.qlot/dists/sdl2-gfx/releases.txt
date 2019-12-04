@@ -1,0 +1,2 @@
+# project url size file-md5 content-sha1 prefix [system-file1..system-fileN]
+sdl2-gfx qlot://localhost/archives/sdl2-gfx-ref-5a5324300d6f9993f09b226cdfe1e00f5edea396.tar.gz 616275 d8a170e0bea7c8c4589a00f07b489b75 0822a74504f2019e14bed72d09d1775e49a1aabc sdl2-gfx-ref-5a5324300d6f9993f09b226cdfe1e00f5edea396 sdl2-gfx.asd

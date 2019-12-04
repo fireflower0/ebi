@@ -1,0 +1,14 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+
+(uiop:define-package #:2drendering/roswell/2drendering.ros
+  (:use #:cl))
+(in-package #:2drendering/roswell/2drendering.ros)
+
+(ql:quickload '(:2drendering) :silent t)
+
+(defun main (&rest argv)
+  (2drendering:start argv))

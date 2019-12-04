@@ -1,0 +1,5 @@
+name: sdl2kit
+version: git-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f
+distinfo-subscription-url: qlot://localhost/sdl2kit.txt
+release-index-url: qlot://localhost/sdl2kit/git-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f/releases.txt
+system-index-url: qlot://localhost/sdl2kit/git-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f/systems.txt

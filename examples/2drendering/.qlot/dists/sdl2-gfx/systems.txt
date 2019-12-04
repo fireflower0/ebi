@@ -1,0 +1,2 @@
+# project system-file system-name [dependency1..dependencyN]
+sdl2-gfx sdl2-gfx sdl2-gfx cl-autowrap cl-plus-c cl-ppcre sdl2

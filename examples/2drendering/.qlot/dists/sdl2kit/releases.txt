@@ -1,0 +1,2 @@
+# project url size file-md5 content-sha1 prefix [system-file1..system-fileN]
+sdl2kit qlot://localhost/archives/sdl2kit-ref-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f.tar.gz 11896 638b13eac53914e6ac0ae657d59f5eb8 371563c49bccf44bfb0b04b18b372e646915dc42 sdl2kit-ref-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f sdl2kit.asd sdl2kit-examples.asd
