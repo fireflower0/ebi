@@ -1,6 +1,0 @@
-*.fasl
-*.lx??fsl
-*.dx??fsl
-src/sdl2-cffi.lisp
-src/sdl2-macros.lisp
-.plant/

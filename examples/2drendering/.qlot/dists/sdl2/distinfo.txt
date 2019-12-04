@@ -1,5 +1,0 @@
-name: sdl2
-version: git-fae3630d945fabdee7521fee9b99d07b4dad1155
-distinfo-subscription-url: qlot://localhost/sdl2.txt
-release-index-url: qlot://localhost/sdl2/git-fae3630d945fabdee7521fee9b99d07b4dad1155/releases.txt
-system-index-url: qlot://localhost/sdl2/git-fae3630d945fabdee7521fee9b99d07b4dad1155/systems.txt

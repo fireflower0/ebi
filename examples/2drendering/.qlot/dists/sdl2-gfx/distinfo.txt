@@ -1,5 +1,0 @@
-name: sdl2-gfx
-version: git-5a5324300d6f9993f09b226cdfe1e00f5edea396
-distinfo-subscription-url: qlot://localhost/sdl2-gfx.txt
-release-index-url: qlot://localhost/sdl2-gfx/git-5a5324300d6f9993f09b226cdfe1e00f5edea396/releases.txt
-system-index-url: qlot://localhost/sdl2-gfx/git-5a5324300d6f9993f09b226cdfe1e00f5edea396/systems.txt

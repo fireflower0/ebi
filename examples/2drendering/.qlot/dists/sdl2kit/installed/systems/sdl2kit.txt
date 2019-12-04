@@ -1,1 +1,0 @@
-dists/sdl2kit/software/sdl2kit-ref-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f/sdl2kit.asd
