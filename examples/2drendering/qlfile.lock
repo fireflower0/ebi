@@ -1,16 +1,4 @@
 ("quicklisp" .
- (:class qlot/source/dist:source-dist
+ (:class qlot.source.ql:source-ql-all
   :initargs (:distribution "http://beta.quicklisp.org/dist/quicklisp.txt" :%version :latest)
   :version "2019-11-30"))
-("sdl2" .
- (:class qlot/source/git:source-git
-  :initargs (:remote-url "https://github.com/lispgames/cl-sdl2")
-  :version "git-fae3630d945fabdee7521fee9b99d07b4dad1155"))
-("sdl2-gfx" .
- (:class qlot/source/git:source-git
-  :initargs (:remote-url "https://github.com/Zulu-Inuoe/cl-sdl2-gfx")
-  :version "git-5a5324300d6f9993f09b226cdfe1e00f5edea396"))
-("sdl2kit" .
- (:class qlot/source/git:source-git
-  :initargs (:remote-url "https://github.com/lispgames/sdl2kit")
-  :version "git-aae663224a10ece2b0c374aa5942a3f0bc1b3c2f"))
