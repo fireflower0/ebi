@@ -1,0 +1,14 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+
+(uiop:define-package #:key-input/roswell/key-input.ros
+  (:use #:cl))
+(in-package #:key-input/roswell/key-input.ros)
+
+(ql:quickload '(:key-input) :silent t)
+
+(defun main (&rest argv)
+  (key-input:start argv))
