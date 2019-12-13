@@ -20,13 +20,6 @@ $ sudo apt install libsdl2-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-mixer-d
 
 Install with reference to [here](https://github.com/roswell/roswell#installation-dependency--usage)
 
-### Install SDL2 Wrapper for Common Lisp
-
-```
-$ ros install lispgames/cl-sdl2
-$ ros install Zulu-Inuoe/cl-sdl2-gfx
-```
-
 ### Install libffi
 
 ```
