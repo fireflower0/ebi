@@ -1,0 +1,14 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+
+(uiop:define-package #:fps-timer/roswell/fps-timer.ros
+  (:use #:cl))
+(in-package #:fps-timer/roswell/fps-timer.ros)
+
+(ql:quickload '(:fps-timer) :silent t)
+
+(defun main (&rest argv)
+  (fps-timer:start argv))
