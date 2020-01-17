@@ -5,7 +5,8 @@
 (in-package #:<% @var name %>/app)
 
 (defun main (&rest args)
-  (with-window-renderer (window renderer)
+  (with-window-renderer (window renderer :width 640 :height 480
+                                :title "Lisp Game")
     (sdl2:with-event-loop (:method :poll)
       (:keydown (:keysym keysym)
                 (if (sdl2:scancode= (sdl2:scancode-value keysym)

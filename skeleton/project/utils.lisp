@@ -1,19 +1,20 @@
 (uiop:define-package #:<% @var name %>/utils
   (:use #:cl)
-  (:export #:with-window-renderer))
+  (:export #:with-window-renderer
+           #:*screen-width*
+           #:*screen-height*))
 (in-package #:<% @var name %>/utils)
 
-(defparameter *title* "Lisp Game")
-(defparameter *width*  640)
-(defparameter *height* 480)
+(defparameter *screen-width* nil)
+(defparameter *screen-height* nil)
 
-(defmacro with-window-renderer ((window renderer)
-                                &body body)
+(defmacro with-window-renderer
+    ((window renderer &key width height title)
+     &body body)
+  (setf *screen-width* width *screen-height* height)
   `(sdl2:with-init (:video)
      (sdl2:with-window (,window
-                        :title ,*title*
-                        :w ,*width*
-                        :h ,*height*
+                        :title ,title :w ,width :h ,height
                         :flags '(:shown))
        (sdl2:with-renderer (,renderer
                             ,window
