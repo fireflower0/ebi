@@ -8,6 +8,8 @@
                "sdl2-image"
                "sdl2-ttf"
                "<% @var name %>/boot"
-               "cl-syntax-annot"))
+               "cl-syntax-annot"
+               "envy"
+               "mito"))
 
 (register-system-packages "<% @var name %>/boot" '(#:<% @var name %>))
