@@ -10,6 +10,7 @@
                "<% @var name %>/boot"
                "cl-syntax-annot"
                "envy"
-               "mito"))
+               "mito"
+               "sxql"))
 
 (register-system-packages "<% @var name %>/boot" '(#:<% @var name %>))
