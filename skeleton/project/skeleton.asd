@@ -4,13 +4,13 @@
   :author "<% @var author %>"
   :license "<% @var license %>"
   :description "<% @var description %>"
-  :depends-on ("sdl2"
+  :depends-on ("envy"
+               "mito"
+               "sxql"
+               "sdl2"
                "sdl2-image"
                "sdl2-ttf"
-               "<% @var name %>/boot"
                "cl-syntax-annot"
-               "envy"
-               "mito"
-               "sxql"))
+               "<% @var name %>/boot"))
 
 (register-system-packages "<% @var name %>/boot" '(#:<% @var name %>))
