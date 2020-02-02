@@ -25,3 +25,12 @@
          ,@body
          (sdl2-image:quit)
          (sdl2-ttf:quit)))))
+
+(defun create-string-texture (renderer font-file-path string
+                              &key (r 0) (g 0) (b 0) (a 0))
+  (let ((surface (sdl2-ttf:render-utf8-solid
+                  (sdl2-ttf:open-font font-file-path 50)
+                  string r g b a)))
+    (values (sdl2:create-texture-from-surface renderer surface)
+            (sdl2:surface-width  surface)
+            (sdl2:surface-height surface))))
