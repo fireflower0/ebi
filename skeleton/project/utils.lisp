@@ -1,8 +1,12 @@
 (uiop:define-package #:<% @var name %>/utils
   (:use #:cl)
-  (:export #:with-window-renderer
-           #:*screen-width*
-           #:*screen-height*))
+  (:export #:*screen-width*
+           #:*screen-height*
+           #:with-window-renderer
+           #:create-string-texture
+           #:ticks-passed-p
+           #:while
+           #:noop))
 (in-package #:<% @var name %>/utils)
 
 (defparameter *screen-width* nil)
@@ -34,3 +38,15 @@
     (values (sdl2:create-texture-from-surface renderer surface)
             (sdl2:surface-width  surface)
             (sdl2:surface-height surface))))
+
+(defun ticks-passed-p (a b)
+  (<= (- b a) 0))
+
+(defmacro while (test &body body)
+  `(do ()
+       ((not ,test))
+     ,@body))
+
+(defun noop (&rest args)
+  (declare (ignore args))
+  (values))
