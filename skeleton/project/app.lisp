@@ -4,6 +4,8 @@
   (:export #:main))
 (in-package #:<% @var name %>/app)
 
+(defparameter *ticks-count* 0)
+
 (defun process-input (keysym)
   (when (sdl2:scancode= (sdl2:scancode-value keysym) :scancode-escape)
     (sdl2:push-event :quit)))
